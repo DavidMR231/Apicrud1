@@ -5,19 +5,24 @@ Este proyecto implementa una API simple utilizando el framework Express en Node.
 
 ## Configuración
 
-1. **Instalación de Dependencias:**
+1. **Clonación del Repositorio:**
+   ```bash
+   git clone <URL_DEL_REPOSITORIO>
+   ```
+
+2. **Instalación de Dependencias:**
    ```bash
    npm install
    ```
 
-2. **Configuración de Variables de Entorno:**
+3. **Configuración de Variables de Entorno:**
    - Crea un archivo `.env` en la raíz del proyecto.
    - Agrega tu clave de API:
      ```plaintext
      API_KEY=TU_CLAVE_API
      ```
 
-3. **Iniciar la Aplicación:**
+4. **Iniciar la Aplicación:**
    ```bash
    npm start
    ```
@@ -44,9 +49,7 @@ const apiKeyValidation = (req, res, next) => {
   } else {
     res.status(401).send('Invalid API key');
   }
-  next();  // Este next() estaba duplicado, lo he eliminado.
 };
-
 app.use(express.json());
 app.use(apiKeyValidation);
 ```
@@ -149,23 +152,3 @@ POST http://localhost:3000/users
 
 ¡Siéntete libre de contribuir al proyecto abriendo problemas o enviando solicitudes de extracción!
 
-## Licencia
-
-Este proyecto está bajo la Licencia MIT.
-```
-
-Asegúrate de reemplazar `TU_CLAVE_API` con tu clave de API real. Además, puedes ajustar la documentación según tus necesidades específicas.
-
-¡Por supuesto! Aquí está el final de la documentación:
-
-```markdown
-## Contribuciones
-
-¡Siéntete libre de contribuir al proyecto abriendo problemas o enviando solicitudes de extracción!
-
-## Licencia
-
-Este proyecto está bajo la Licencia MIT.
-```
-
-Con esto, tu documentación está completa. Recuerda personalizar cualquier detalle adicional según sea necesario para tu proyecto. Si tienes más preguntas o necesitas ayuda adicional, ¡no dudes en preguntar!
