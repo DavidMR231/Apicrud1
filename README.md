@@ -1,4 +1,3 @@
-```markdown
 # Proyecto de API con Express
 
 Este proyecto implementa una API simple utilizando el framework Express en Node.js. La API gestiona usuarios y proporciona operaciones CRUD (Crear, Leer, Actualizar, Eliminar).
